@@ -13,7 +13,7 @@ public class Consumer {
         //在这里写下你想传入的参数内容
         //Write down the parameters you want to pass in here
         String result = helloService.sayHello("Write down the parameters you want to pass in here");
-        System.out.println("remotely invokes helloService.sayHello()");
+        System.out.println("remotely invokes helloService.sayHello() : ");
         System.out.println(result);
 
     }
