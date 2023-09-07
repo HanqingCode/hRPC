@@ -33,7 +33,7 @@ public class MapRemoteRegister {
     private static void saveFile() {
         try {
             FileOutputStream fileOutputStream = new FileOutputStream
-                    ("/Users/phq/Documents/project/rpcguide/resource/rpc-demo/hRPC/MapRemoteRegister.txt");
+                    ("MapRemoteRegister.txt");
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream);
             objectOutputStream.writeObject(map);
         } catch (IOException e) {
@@ -44,7 +44,7 @@ public class MapRemoteRegister {
     private static Map<String, List<URL>> getFile() {
         try {
             FileInputStream fileInputStream = new FileInputStream
-                    ("/Users/phq/Documents/project/rpcguide/resource/rpc-demo/hRPC/MapRemoteRegister.txt");
+                    ("MapRemoteRegister.txt");
             ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream);
             return (Map<String, List<URL>>) objectInputStream.readObject();
         } catch (IOException | ClassNotFoundException e) {
