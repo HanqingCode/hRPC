@@ -6,14 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Consumer" />
         <module name="Provider-Common" />
+        <module name="Consumer" />
+        <module name="hrpc" />
         <module name="Provider" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="17">
-      <module name="hrpc" target="1.8" />
-      <module name="hRPC" target="1.8" />
       <module name="zhouyurpc" target="1.8" />
       <module name="ZhouyuRPC" target="1.8" />
     </bytecodeTargetLevel>
